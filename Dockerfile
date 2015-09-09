@@ -1,4 +1,4 @@
-FROM d356/fedora-mxe-shared-gcc-4-9-2
+FROM d356/fedora-mxe-shared
 COPY yabause yabause
 RUN sed -i "/if (WIN32)/c\if (FALSE)" /yabause/yabause/src/qt/CMakeLists.txt
 
