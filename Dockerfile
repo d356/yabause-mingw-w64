@@ -9,5 +9,5 @@ RUN sed -i -e 's/add_library(yabause/add_library(yabause STATIC/g' /yabause/yaba
 RUN cd yabause/yabause ; \
     mkdir build ; \
     cd build ; \
-    cmake -DYAB_OPTIMIZATION="-O3 -fno-inline-functions" -DYAB_PORTS=qt -DCMAKE_TOOLCHAIN_FILE=/mxe/usr/x86_64-w64-mingw32.shared/share/cmake/mxe-conf.cmake .. ; \
+    cmake -DYAB_OPTIMIZATION="-O1" -DYAB_PORTS=qt -DCMAKE_TOOLCHAIN_FILE=/mxe/usr/x86_64-w64-mingw32.shared/share/cmake/mxe-conf.cmake .. ; \
     make
